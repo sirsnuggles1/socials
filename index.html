@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <link rel="icon" type="image/png" href="images/Favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SirSnuggles | Socials</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            /* DE DEFINITIEVE GRADIËNT: De zachte, blauw-paarse overgang, afgeleid van de knop. */
+            background: linear-gradient(135deg, #4d94ff 0%, #a876ff 100%);
+            
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Comfortaa', sans-serif; 
+            margin: 0;
+            color: #1a1a1a; /* Donkere tekstkleur */
+        }
+
+        .hub-container {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            width: 90%;
+            max-width: 600px; /* Max breedte van de centrale kaart */
+            text-align: center;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .profile-pic-header {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Twee kolommen van gelijke breedte */
+            gap: 20px; /* Ruimte tussen de kaarten */
+        }
+
+        .site-card {
+            background-color: #f7f7f7; /* Een lichte achtergrond voor de kaarten */
+            border-radius: 15px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Zachte schaduw op de kaart */
+            transition: transform 0.2s, box-shadow 0.2s;
+            height: 150px; /* Vaste hoogte voor de kaarten */
+        }
+
+        /* Effect bij hoveren */
+        .site-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .profile-pic-card {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 1em;
+            font-weight: 500;
+            margin: 5px 0 15px 0;
+            text-align: center;
+        }
+
+        .go-to-button {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 25px;
+            /* Dit is de originele, perfecte knopgradiënt */
+            background: linear-gradient(to right, #00c6ff, #0072ff); 
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+            transition: opacity 0.2s;
+        }
+
+        .go-to-button:hover {
+            opacity: 0.9;
+        }
+
+        /* Specifiek voor de lege kaart */
+        .empty-card {
+            background-color: white; 
+            border: 2px dashed #ddd; 
+            box-shadow: none; 
+        }
+
+        /* Media query voor kleinere schermen (bv. mobiel) */
+        @media (max-width: 500px) {
+            .card-grid {
+                grid-template-columns: 1fr; 
+            }
+            .hub-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="hub-container">
+    <header class="header">
+        <img src="images/Favicon.png" alt="SirSnuggles Profielfoto" class="profile-pic-header">
+        <h1>SirSnuggles | Socials</h1>
+    </header>
+
+    <div class="card-grid">
+        <div class="site-card">
+            <img src="images/Favicon.png" alt="SirSnuggles Home Favicon" class="profile-pic-card">
+            <span class="card-title">Discord</span>
+            <a href="https://www.youtube.com/@sirsnuggles1?sub_confirmation=1" class="go-to-button" style="background: linear-gradient(to right, #5865F2, #5865F2);">Join my server</a>
+            <a href="https://www.youtube.com/@sirsnuggles1?sub_confirmation=1" class="go-to-button" style="background: linear-gradient(to right, #5865F2, #5865F2);">DM me</a>
+        </div>
+        <div class="site-card">
+    <img src="images/youtube.png" alt="YouTube logo" class="profile-pic-card">
+    <span class="card-title">YouTube</span>
+    <a href="https://www.youtube.com/@sirsnuggles1?sub_confirmation=1" class="go-to-button" style="background: linear-gradient(to right, #ff0000, #ff0000);">Subscribe</a>
+</div>
+        <div class="site-card">
+    <img src="images/a-snuggle-movie.png" alt="A Snuggle Movie Logo" class="profile-pic-card">
+    
+    <span class="card-title">A Snuggle Movie</span>
+    
+    <a href="https://sirsnuggles1.github.io/a-snuggle-movie" class="go-to-button">Go to site</a>
+</div>
+
+    <div class="site-card empty-card">
+        <span class="card-title" style="color: #888;">Comming soon</span>
+    </div>
+        </div>
+</div>
+
+</body>
+</html>
